@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingles app</title>
+
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    
+
+    <header>
+        <div class="options">
+            <div class="option">
+                <span>Tradução</span>
+                <input type="checkbox" id="translate" class="switch">
+                <label for="translate"></label>
+            </div>
+            
+            <div class="option">
+                <span>O que você está dizendo</span>
+                <input type="checkbox" id="my-voice" class="switch">
+                <label for="my-voice"></label>
+            </div>
+            
+            <div class="option">
+                <span>O que está sendo dito</span>
+                <input type="checkbox" id="sentence" class="switch">
+                <label for="sentence"></label>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="message">
+                <span id="txt-message"></span>
+            </div>
+            <div class="button">
+                <audio id="voice" src="audios/audio1.wav"></audio>
+                <button id="start-bt">Play</button>
+            </div>
+
+            <div class="texts">
+                <div class="text" id="area-translate">
+                    <span>Tradução: </span>
+                    <span id="txt-translate"></span> 
+                </div>
+
+                <div class="text" id="area-my-voice">
+                    <span>O que estou dizendo: </span>
+                    <span id="txt-my-voice"></span>
+                </div>
+
+                <div class="text" id="area-sentence">
+                    <span>O que está sendo dito: </span>
+                    <span id="txt-sentence"></span>
+                </div>
+                
+            </div>
+        </div>
+    
+    </main>
+
+    <footer>
+        <div class="choose">
+            <button id="back">Voltar</button>
+            <button id="next">Próximo</button>
+        </div>
+    </footer>
+    
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
